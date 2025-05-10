@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberShield - Phishing Awareness</title>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🚨 Think Before You Click!</h1>
+        <p class="subtitle">Your Guide to Phishing Awareness</p>
+    </header>
+
+    <section class="actions">
+        <a href="/url_website/" class="btn" target="_blank">🔍 Check URL for Phishing risk</a>
+        <p class="desc">Scan suspicious links and detect malicious intent.</p>
+
+        <a href="/website/" class="btn" target="_blank">🛡️ Check Website Security</a>
+        <p class="desc">Verify SSL certificate and HTTPS security.</p>
+
+        <a href="/phishing_info/" class="btn" target="_blank">💡 What to do if Phished?</a>
+        <p class="desc">Steps to take after falling for phishing.</p>
+    </section>
+
+    <section class="tips">
+        <h2>📌 Quick Tip:</h2>
+        <p>Never enter personal info on suspicious sites. Always look for <strong>HTTPS</strong> in the URL!</p>
+    </section>
+
+    <footer>
+        © 2025 CyberShield. Stay Safe Online! | Built with ❤️ by Paramjeet
+    </footer>
+</body>
+</html>

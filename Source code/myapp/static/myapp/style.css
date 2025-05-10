@@ -1,0 +1,101 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55), url('{% static "myapp/bg.png" %}') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #f9f9f9;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #d0d0ff;
+}
+
+/* Main Buttons Section */
+.actions {
+    flex: 1;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+/* Button Descriptions */
+.desc {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #cccccc;
+}
+
+/* Tips Section */
+.tips {
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.tips h2 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.tips p {
+    color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    background: #000000d0;
+    padding: 15px;
+    color: #ccc;
+    font-size: 0.9em;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.5);
+}

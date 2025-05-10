@@ -1,0 +1,18 @@
+# Requirements for CyberShield Project
+
+# Python version
+python>=3.10
+
+# Core dependencies
+Django>=4.2
+requests>=2.31.0
+urllib3>=1.26.15
+pytz>=2023.3
+idna>=3.4
+certifi>=2023.7.22
+
+# For environment variables (optional, if used)
+python-dotenv>=1.0.0
+
+# For production server (optional)
+gunicorn>=21.2.0

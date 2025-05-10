@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check URL for phishing risk</title>
+    <link rel="stylesheet" href="{% static 'myapp/styleurl.css' %}">
+</head>
+<body>
+    <h1>Is This Link Safe? Let’s Find Out!</h1>
+    <form class="form" action="/check_malicious/" method="post">
+        {% csrf_token %}
+        <h2 class="h2">Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches,share them with the security community.</h2></h2>
+        <img src="{% static 'myapp/earthurlbg.png' %}" height="120px" width="120px">
+        <label><h2>Drop a Link – Let’s Investigate!</h2></label>
+        <input type="url" name="url" placeholder="https://example.com" required size="100" style="height:30px;border-radius: 15px; text-align: center;margin: 20px;">
+        <input type="submit" value="Inspect">
+    </form>
+    {% if url %}
+    <div class="{% if result == 'Yes' %}result-box malicious{% else %}result-box safe{% endif %}">
+        <h3>
+            {% if result == 'Yes' %}
+                <span class="icon">⚠️</span> Warning: Malicious URL Detected
+            {% else %}
+                <span class="icon">✅</span> Safe URL
+            {% endif %}
+        </h3>
+        <p><strong>URL:</strong> {{ url }}</p>
+        <p><strong>Malicious:</strong> {{ result }}</p>
+    </div>
+{% endif %}
+<footer>
+    © 2025 URL Detector | Built with ❤️ by Paramjeet
+</footer>
+
+</body>
+</html>
