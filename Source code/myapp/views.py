@@ -19,7 +19,7 @@ def check_url_view(request):
     result = None
     url = None
 
-    API_KEY = 'a24fbc12d2087c307a4baa724f0e8a499ca1a62acd59dcb894e4010ed7ad16b1'
+    API_KEY = 'your_api_key'
 
     if request.method == 'POST':
         url = request.POST.get('url')
