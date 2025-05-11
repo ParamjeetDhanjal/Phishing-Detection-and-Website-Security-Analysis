@@ -85,8 +85,9 @@ Displayed inside a circular graph.
 
 1. Clone the repository:
    
-   git clone https://github.com/yourusername/phishing-website-security-checker.git
-   cd phishing-website-security-checker
+   git clone https://github.com/yourusername/Phishing-Detection-and-Website-Security-Analysis.git
+   cd
+Phishing-Detection-and-Website-Security-Analysis
    
 
 2. Install the required packages:
